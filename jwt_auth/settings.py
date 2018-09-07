@@ -16,7 +16,7 @@ SECRET_KEY = 'dhxl9dgymw5vugebyd13j1uq0&rx)oj%#cg5ghu!zf=-z7)_vg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -148,3 +148,7 @@ JWT_AUTH = {
 REST_USE_JWT = True
 
 SITE_ID = 1
+
+SOCIALACCOUNT_EMAIL_VERIFICATION = 'none'
+SOCIALACCOUNT_EMAIL_REQUIRED = False
+SOCIALACCOUNT_QUERY_EMAIL = True
